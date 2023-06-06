@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" styleClass="body" stylesheets="@style3.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="letstrade.Add_new_ItemController">
+   <children>
+      <TextField fx:id="New_item_ID" alignment="CENTER" layoutX="251.0" layoutY="110.0" onKeyPressed="#PID_pressed" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="New_item_name" alignment="CENTER" layoutX="251.0" layoutY="178.0" onKeyPressed="#PN_Pressed" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font></TextField>
+      <TextField fx:id="New_item_stock" alignment="CENTER" layoutX="251.0" layoutY="249.0" onKeyPressed="#S_Pressed" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font></TextField>
+      <Button layoutX="251.0" layoutY="383.0" mnemonicParsing="false" onAction="#adding_NewItem_and_save" text="Save in Stock" textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font></Button>
+      <Button layoutX="408.0" layoutY="383.0" mnemonicParsing="false" onAction="#Clear_Fields" prefHeight="35.0" prefWidth="135.0" text="Clear" textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="New_item_PPB" alignment="CENTER" layoutX="251.0" layoutY="315.0" onKeyPressed="#PB_Pressed" prefHeight="50.0" prefWidth="200.0">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font></TextField>
+      <Label alignment="TOP_CENTER" layoutX="234.0" layoutY="60.0" prefHeight="50.0" prefWidth="235.0" text="ADD NEW ITEM" textAlignment="CENTER" textFill="#e33619" underline="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="96.0" layoutY="122.0" text="Product ID" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold" size="21.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="80.0" layoutY="190.0" text="Product Name" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="122.0" layoutY="266.0" text="Stock" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" layoutX="105.0" layoutY="327.0" text="Pcs / Bun" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="122.0" text=":">
+         <font>
+            <Font name="Book Antiqua Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="190.0" prefHeight="27.0" prefWidth="6.0" text=":">
+         <font>
+            <Font name="Book Antiqua Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="261.0" prefHeight="27.0" prefWidth="6.0" text=":">
+         <font>
+            <Font name="Book Antiqua Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="235.0" layoutY="327.0" text=":">
+         <font>
+            <Font name="Book Antiqua Bold" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="13.0" layoutY="9.0" mnemonicParsing="false" onAction="#back_button" prefHeight="41.0" prefWidth="135.0" text="Back to Stock" textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="132.0" prefHeight="58.0" prefWidth="384.0" text="Metro Trading" textAlignment="CENTER">
+         <font>
+            <Font name="Showcard Gothic" size="43.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#c5cdbf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="499.0" layoutY="9.0" mnemonicParsing="false" onAction="#exit_button" prefHeight="41.0" prefWidth="135.0" text="Exit" textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

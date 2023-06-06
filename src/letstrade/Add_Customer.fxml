@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="add_customer_content" prefHeight="491.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="letstrade.Add_CustomerController">
+   <children>
+      <Label layoutX="84.0" layoutY="104.0" text="ID" />
+      <Label layoutX="84.0" layoutY="162.0" text="Name" />
+      <Label layoutX="84.0" layoutY="225.0" text="Contact No." />
+      <Label layoutX="77.0" layoutY="345.0" text="Address" />
+      <Label layoutX="66.0" layoutY="401.0" text="Outstanding Bill" />
+      <Button layoutX="552.0" layoutY="396.0" mnemonicParsing="false" onAction="#save_customer_info" text="Save" />
+      <Label layoutX="87.0" layoutY="280.0" text="Company" />
+      <TextField fx:id="newcusid" layoutX="239.0" layoutY="99.0" />
+      <TextField fx:id="newcusname" layoutX="239.0" layoutY="168.0" />
+      <TextField fx:id="newcuscon" layoutX="230.0" layoutY="230.0" />
+      <TextField fx:id="newcuscom" layoutX="229.0" layoutY="286.0" />
+      <TextField fx:id="newcusadd" layoutX="220.0" layoutY="340.0" />
+      <TextField fx:id="newcusout" layoutX="230.0" layoutY="396.0" />
+   </children>
+</AnchorPane>
